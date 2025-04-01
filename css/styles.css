@@ -567,7 +567,7 @@ address {
 }
 
 /* ----------------------Footer5--------------- */
-form {
+.form-modal {
     display: flex;
     align-items: start;
     gap: 24px;
@@ -599,7 +599,7 @@ form {
         letter-spacing: 0.02em;
         color: #fff;
         display: flex;
-        /* margin-left: 80px; */
+        margin-left: 80px;
         margin-bottom: 16px;
 }
 
@@ -648,12 +648,12 @@ height: 40px;
        
 }
 
-.icon-footer {
+.icon-footer-butter {
     margin-left: 16px;
 }
 
 /* ----------------------Footer5--------------- */
- /* .modal-overlay {
+  .modal-overlay {
   
     background: rgba(46, 47, 66, 0.4);
         position: fixed;
@@ -903,4 +903,4 @@ background-color: #404bbf;
 *.modal-overlay .is-open {
     opacity: 1;
     pointer-events: auto;
-} */
+} 
