@@ -568,7 +568,6 @@ address {
 
 /* ----------------------Footer5--------------- */
 .form-modal {
-    display: flex;
     align-items: start;
     gap: 24px;
     flex-direction: column;
@@ -816,16 +815,15 @@ font-weight: 400;
     text-align: center;
     gap: 8px;
     margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .form-label {
-    font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-        
+       
         }
 
 .policy-href {
@@ -838,16 +836,29 @@ font-weight: 400;
     align-items: center;
     justify-content: center;
     fill: transparent;
-
+        
 }
+
+.checkbox-link {
+    line-height: 16px;
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.checkbox-icon {
+    width: 10px;
+    height: 8px;
+    fill: transparent;
+    transition: fill 0.3s;
+} 
 
 .button-modal {
        margin-top: 24px;
-   /* padding: 16px 32px; */
    margin-left: 95px;
         min-width: 169px;
         display: block;
-         /* margin: 0 auto; */
         min-height: 56px;
         font-family: "Roboto", sans-serif;
          font-size: 16px;
@@ -898,16 +909,16 @@ fill: #4d5ae5;
     fill: #4D5AE5;
 }
  
-.form-input:checked,
-.form-input:active {
-background-color:#404bbf;
-}
 
-.modal-btn:hover,
+
+.modal-btn:hover {
+        background-color: #404bbf;
+        border: none;
+    }
+
 .about-btn:focus {
 background-color: #404bbf;
 border: none;
-
 }
 
 
@@ -923,3 +934,30 @@ border: none;
     opacity: 1;
     pointer-events: auto;
 } 
+
+.visually-hidden:checked+.form-label .policy-href  {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.visually-hidden:checked+.form-label .checkbox-icon {
+    fill: var(--color-secondary, #F4F4FD);
+    
+} 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.label-comment:focus {
+    border-color: #4D5AE5;
+}
