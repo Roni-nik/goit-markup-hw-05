@@ -719,6 +719,7 @@ font-weight: 500;
     display: inline-block;
     width: 100%;
 
+
    
 }
 .input-modal {
@@ -749,7 +750,7 @@ font-weight: 500;
 
 .name-label{ 
 
-margin-bottom: 8px;
+margin-bottom: 16px;
 
 }
 
@@ -815,7 +816,7 @@ font-weight: 400;
     text-align: center;
     gap: 8px;
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .form-label {
@@ -916,7 +917,7 @@ fill: #4d5ae5;
         border: none;
     }
 
-.about-btn:focus {
+.modal-btn:focus {
 background-color: #404bbf;
 border: none;
 }
