@@ -165,7 +165,7 @@ img {
 
 /* -------------------------1 SECTION------------------------------------- */
 
-.main-container-head {
+.main-head {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -750,7 +750,7 @@ font-weight: 500;
 
 .name-label{ 
 
-margin-bottom: 16px;
+margin-bottom: 8px;
 
 }
 
@@ -961,4 +961,8 @@ border: none;
 
 .label-comment:focus {
     border-color: #4D5AE5;
+}
+
+.container-comment {
+    margin-bottom: 16px
 }
